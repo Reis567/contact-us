@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #010120;
+    --white-color: #FFFFFF;
+    --light-gray-color:#9e9e9e;
+    --hover-color: #6c2fcf;
+    --gap: 3rem
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    
+}
+
+h1 , h2 , h3 ,h4 , h5 h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 4.5rem;
+}
+
+h4{
+    font-size: 3.5rem;
+}
+
+h5{
+    font-size: 2.5rem;
+}
+
+h6{
+    font-size: 1.5rem;
+}
+.main-bg {
+    background-image: url('https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=996&t=st=1682462021~exp=1682462621~hmac=70a65d953dace9d9fc880ba543189fdda0a0749b08ec8b7f201a6665d9af6974');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+    
+}
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.section {
+    min-height: 100vh;
+}
+.intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap : var(--gap);
+    min-height: 100vh;
+}
+.intro-content h1{
+  margin-bottom:3rem;
+  }
+  .intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.intro-img img ,.intro-img svg{
+    margin-top: 6.5rem;
+    max-width: 100%;
+    min-height: auto;
+}
+  .contact-form {
+    grid-column: span 2;
+  }
+  
+  .contact-form .form-grid{
+    border:none;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:var(--gap);
+    
+  }
+    .form-grid legend{
+    font-style:italic;
+    font-size:1.6rem;
+    margin-bottom:3rem;  
+  }
+  
+  .form-group {
+    flex:1 1 32rem;
+  }
+   .form-group label{
+    display:block;
+  }
+  .form-group input,.form-group textarea{
+    border:0;
+    background:var(--white-color);
+    padding:1.5rem 2rem;
+    width:100%;
+    font-size:3rem;
+  }
+  .form-group button{
+    border:0.5rem solid var(--white-color);
+    background:none;
+    color:var(--white-color);
+    padding:1.5rem 2rem;
+    font-size:3rem;
+    cursor:pointer;
+    transition:all 300ms ease-in-out;
+  }
+  .form-group button:hover{
+    background:var(--white-color);
+    color:var(--primary-color);
+  }
+  .from-group ::placeholder{
+    color:var(--light-gray-color);
+  }
+  .full-width {
+    width:auto;
+    flex:1 1 100%;
+  }
